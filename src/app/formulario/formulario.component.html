@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.component.css">
+    <title>World Vision</title>
+</head>
+<body>
+    
+    <!--SECCION DE INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <div id="contenedor-foto">
+                        <img  src="../../assets/img/logo.png" alt="" class="logo">
+                    </div>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#" class="seleccionado" (click)="seleccionar(this)">NUESTRO TRABAJO</a></li>
+                            <li><a href="#" (click)="seleccionar(this)">DONDE ESTAMOS</a></li>
+                            <li><a href="#" (click)="seleccionar(this)">RECURSOS</a></li>
+                            <li><a href="#" (click)="seleccionar(this)">PROTEGE A UN NIÑO O UNA NIÑA</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </section>
+    
+<!--INFORMACIÓN-->
+    <div id="container">
+
+        <!--SECCION DE CONTACTO-->
+        <section id="contacto">
+            <h1 class="titulo-seccion"><b>Gracias por tu mensaje</b></h1><br>
+            <p>Juntos podemos transformar la vida de la niñez en América Latina y el Caribe.</p><br><br>
+            <div class="contenedor-form">
+                <form>
+                    <div class="fila-mitad">
+                        <input id="name" name="Nombre" type="text" placeholder="Nombre" class="input-mitad">
+                        <input id="lastname" name="Apellido" type="text" placeholder="Apellido" class="input-mitad">
+                    </div>
+                    <div class="fila-mitad">
+                        <input id="email" name="Correo electrónico" type="text" placeholder="Correo electrónico" class="input-mitad">
+                        <input id="phone" name="Teléfono" type="text" placeholder="Teléfono" class="input-mitad">
+                    </div>
+                    <div class="fila">
+                        <textarea name="message" id="Mensaje" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+                    </div>
+                    <div class="fila">
+                        <input id="btn-enviar" name="submit" type="submit" value="Enviar" class="btn-enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--ANEXO-->
+        <div id="anexos">
+            <div id="anexo_first">
+                <h3>World Vision America Latina y el Caribe, Oficina Regional</h3><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero reiciendis ratione necessitatibus, facilis, dolorem totam amet alias consectetur in dicta ex similique repellendus natus commodi? Et natus facilis earum voluptates.</p><br>
+                <ul>
+                    <span><img src="../../assets/img/phone.png" alt=""></span>
+                    <li>+506 11112223</li>
+                    <span><img src="../../assets/img/mail.png" alt=""></span>
+                    <li>comunicaciones@correo.com</li>
+                </ul>
+            </div> <br><br>
+            <div id="anexo_sec">
+                <h3>Contacto para prensa y medios / Press & media contact</h3><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero reiciendis ratione necessitatibus, facilis, dolorem totam amet alias consectetur in dicta ex similique repellendus natus commodi? Et natus facilis earum voluptates.</p><br>
+                <ul> 
+                    <span><img src="../../assets/img/phone.png" alt=""></span>
+                    <li>+506 11112223</li>
+                    <span><img src="../../assets/img/mail.png" alt=""></span>
+                    <li>comunicaciones@correo.com</li>
+                </ul>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
